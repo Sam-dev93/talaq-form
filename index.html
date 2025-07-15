@@ -688,7 +688,7 @@ function generatePerfectPDF(doc, formData) {
     doc.setTextColor(31, 41, 55);
     doc.setFontSize(9);
     doc.setFont(undefined, 'normal');
-    const husbandDeclaration = 'I hereby declare before Allah (SWT) that I have pronounced divorce (Talaq) to my wife. I understand this is a serious matter before Allah and I have made this decision after careful consideration in accordance with Islamic law.';
+    const husbandDeclaration = 'I hereby declare that I have pronounced divorce (Talaq) to my wife. I understand this is a serious matter, and I have made this decision after careful consideration in accordance with Islamic law.';
     const splitHusbandText = doc.splitTextToSize(husbandDeclaration, 170);
     doc.text(splitHusbandText, 18, yPos + 13);
     
